@@ -38,14 +38,17 @@ def check(info, swaps):
 def main():
     txt = input().strip()
 
-    if 'I'and 'i' in txt:
+    if 'I' in txt:
         n = int(input())
         info = list(map(int, input().split()))
 
-    if 'F'and 'f'in txt:
-        filename = input().strip()
-        n = int(f.readline())
-        info = list(map(int, f.readline().split()))
+    if 'F'in txt:
+        if 'a' not in filename:
+            step = './tests/' + filename
+            with open(step) as f:
+                filename = input().strip()
+                n = int(f.readline())
+                info = list(map(int, f.readline().split()))
 
 
 
