@@ -44,11 +44,8 @@ def main():
 
     if 'F' in txt:
         filename = input().strip()
-        if 'a' not in filename:
-            f_path = './tests/' + filename
-            with open(f_path) as f:
-                n = int(f.readline())
-                info = list(map(int, f.readline().split()))
+        n = int(f.readline())
+        info = list(map(int, f.readline().split()))
 
 
 
