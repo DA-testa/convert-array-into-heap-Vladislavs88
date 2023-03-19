@@ -38,11 +38,11 @@ def check(info, swaps):
 def main():
     txt = input().strip()
 
-    if 'I' in txt:
+    if 'I'and 'i' in txt:
         n = int(input())
         info = list(map(int, input().split()))
 
-    if 'F' in txt:
+    if 'F'and 'f'in txt:
         filename = input().strip()
         n = int(f.readline())
         info = list(map(int, f.readline().split()))
