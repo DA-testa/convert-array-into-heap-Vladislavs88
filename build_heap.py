@@ -46,9 +46,9 @@ def main():
         if 'a' not in filename:
             step = './tests/' + filename
             with open(step) as f:
-                filename = input().strip()
-                n = int(f.readline())
-                info = list(map(int, f.readline().split()))
+            filename = input().strip()
+            n = int(f.readline())
+            info = list(map(int, f.readline().split()))
 
 
 
