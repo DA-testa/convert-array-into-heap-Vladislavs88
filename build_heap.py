@@ -1,6 +1,7 @@
 # python3
 #Vladislavs Sidorkins 221RDB070
 
+
 def heap(info, i, n, swaps):
     minimums = i
     kreisais = 2 * i + 1
