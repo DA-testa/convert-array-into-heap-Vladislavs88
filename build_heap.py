@@ -2,7 +2,6 @@ def heap(info, i, n, swaps):
     minimums = i
     kreisais = 2 * i + 1
     labais = 2 * i + 2
-
     if kreisais < n and info[kreisais] < info[minimums]:
         minimums = kreisais
 
