@@ -42,14 +42,13 @@ def main():
         n = int(input())
         info = list(map(int, input().split()))
 
-    if 'F'in txt:
+    if 'F' in txt:
+        filename = input().strip()
         if 'a' not in filename:
             step = './tests/' + filename
             with open(step) as f:
-                filename = input().strip()
                 n = int(f.readline())
-        info = list(map(int, f.readline().split()))
-
+                info = list(map(int, f.readline().split()))
 
 
     assert len(info) == n
